@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DiceBag Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="column left"><canvas id="diceCanvas" width="500" height="1000" style="border:1px solid #000000;"></canvas></div>
+		<div class="column right tab"> 
+			<button id="rollTabButton" class="tablinks" onclick="openTab(event, 'roll')">Roll</button>
+			<button class="tablinks" onclick="openTab(event, 'upgrades')">Upgrades</button>
+			<button class="tablinks" onclick="openTab(event, 'settings')">Settings</button>
+		</div>
+		<div id="roll" class="tabcontent">
+			<h3>ROLL INFO</h3>
+			<button>Roll!</button>
+		</div>
+		<div id="upgrades" class="tabcontent">
+			<h3>UPGRADES</h3>
+		</div>
+		<div id="settings" class="tabcontent">
+			<h3>SETTINGS</h3>
+		</div>
+	</div>
+	<script src="game.js"></script>
+</body>
+</html>
